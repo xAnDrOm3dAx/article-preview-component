@@ -1,0 +1,30 @@
+:root {
+  --text-color: #111111;
+  --background-color: #f8f5fb;
+  --svg-color: #2f5392;
+  --project-card-color: #d2d3db;
+  --box-shadow-color: #88888f;
+  /* --span-color: #2f5392; */
+  --span-color: #b46000;
+  --span-color-hover: #111111;
+  --theme-btn-color: #111111;
+
+
+  --primary-font-family: "Manrope", sans-serif;
+  --primary-font-size: 13px;
+  --primary-font-weight: 500;
+  --secondary-font-weight: 700;
+  --very-dark-grayish-blue: hsl(217, 19%, 35%)
+  --desaturated Dark Blue: hsl(214, 17%, 51%)
+  --grayish-blue: hsl(212, 23%, 69%)
+  --light-grayish-blue: hsl(210, 46%, 95%)
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
