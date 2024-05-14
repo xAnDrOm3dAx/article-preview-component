@@ -91,7 +91,7 @@ section {
   }
 }
 
-.author-wrapper {
+.share-wrapper {
   display: flex;
   align-items: center;
   padding: 15px 30px;
@@ -138,7 +138,7 @@ section {
     }
   }
 
-  .share-wrapper {
+  .links-wrapper {
     display: none;
     align-items: center;
     gap: 1rem;
