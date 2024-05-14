@@ -83,8 +83,7 @@ section {
   gap: 1rem;
   padding: 2.5rem 2rem 1rem;
 
-  h1,
-  h2 {
+  h1 {
     font-size: 1rem;
     font-weight: var(--secondary-font-weight);
     color: var(--very-dark-grayish-blue);
@@ -149,29 +148,19 @@ section {
       color: var(--grayish-blue);
     }
   }
-
-  .share-button-2 {
-    min-width: 35px;
-    min-height: 35px;
-    border-radius: 50%;
-    background-color: var(--desaturated-dark-blue);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    position: relative;
-
-    > svg {
-      width: 100%;
-      height: auto;
-    }
-  }
 }
 
 .attribution {
   font-size: 0.8rem;
   text-align: center;
+  max-width: var(--max-width-mobile);
+
+  > p {
+    margin-bottom: 6px;
+  }
+  @media (min-width: 992px) {
+    max-width: var(--max-width-desktop);
+  }
 }
 
 .attribution a {
