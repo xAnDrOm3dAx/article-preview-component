@@ -1,24 +1,29 @@
 const shareButton = document.querySelector(".share-button");
-const shareButton2 = document.querySelector(".share-button-2");
-const authorWrapper = document.querySelector(".share-wrapper");
+const shareWrapper = document.querySelector(".share-wrapper");
 const authorInfoWrapper = document.querySelector(".author-info-wrapper");
-const shareWrapper = document.querySelector("#links-wrapper");
+const linksWrapper = document.querySelector("#links-wrapper");
 const svgPath = document.querySelector(".svg-path");
 
 shareButton.addEventListener("click", () => {
-  if (shareWrapper.style.display === "flex") {
-    shareWrapper.style.display = "none";
-    authorWrapper.style.background = "none";
-    authorInfoWrapper.style.display = "flex";
-    shareButton.classList.add("share-button");
-    shareButton.classList.remove("share-button-2");
-    svgPath.setAttribute("fill", "#6E8098");
+  if (linksWrapper.style.display === "flex") {
+    toggleAuthor();
   } else {
-    shareWrapper.style.display = "flex";
-    authorInfoWrapper.style.display = "none";
-    authorWrapper.style.background = "var(--very-dark-grayish-blue)";
-    shareButton.classList.remove("share-button");
-    shareButton.classList.add("share-button-2");
-    svgPath.setAttribute("fill", "#FFFFFF");
+    toggleShareLinks();
   }
 });
+
+function toggleAuthor() {
+  linksWrapper.style.display = "none";
+  shareWrapper.style.background = "none";
+  authorInfoWrapper.style.display = "flex";
+  shareButton.style.background = "var(--light-grayish-blue)";
+  svgPath.setAttribute("fill", "#6E8098");
+}
+
+function toggleShareLinks() {
+  linksWrapper.style.display = "flex";
+  authorInfoWrapper.style.display = "none";
+  shareWrapper.style.background = "var(--very-dark-grayish-blue)";
+  shareButton.style.background = "var(--desaturated-dark-blue)";
+  svgPath.setAttribute("fill", "var(--light-grayish-blue)");
+}
