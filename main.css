@@ -79,6 +79,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 992px) {
+    max-width: 360px;
+  }
 }
 
 .info-wrapper {
