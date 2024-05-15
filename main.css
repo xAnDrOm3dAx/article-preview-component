@@ -59,15 +59,18 @@ p {
     display: flex;
     max-width: var(--max-width-desktop);
   }
+}
 
-  > img {
+.image-section {
+  img {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    height: 100%;
+    object-fit: cover;
 
     @media (min-width: 992px) {
       border-top-right-radius: 0;
       border-bottom-left-radius: 12px;
-      max-width: 50%;
     }
   }
 }
