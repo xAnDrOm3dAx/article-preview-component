@@ -79,11 +79,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.6rem;
-
-  @media (min-width: 992px) {
-    max-width: 60%;
-  }
+  padding: 1.4rem 1.4rem;
 }
 
 .info-wrapper {
@@ -101,11 +97,12 @@ p {
 
 .share-wrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  min-height: 70px;
+  min-height: 100px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  padding: 1rem 1.4rem;
 
   @media (min-width: 992px) {
     border-bottom-left-radius: 0;
