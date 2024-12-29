@@ -79,6 +79,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1.6rem;
 
   @media (min-width: 992px) {
     max-width: 60%;
@@ -89,7 +90,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 32px 32px 16px;
+  /* padding: 32px 32px 16px; */
 
   h1 {
     font-size: 1rem;
@@ -100,8 +101,7 @@ p {
 
 .share-wrapper {
   display: flex;
-  align-items: center;
-  padding: 14px 34px;
+  align-items: flex-end;
   justify-content: space-between;
   min-height: 70px;
   border-bottom-left-radius: 12px;
@@ -116,7 +116,7 @@ p {
     align-items: center;
     gap: 16px;
 
-    > img {
+    >img {
       max-width: 40px;
       border-radius: 50%;
     }
@@ -139,7 +139,7 @@ p {
     display: flex;
     align-items: center;
 
-    > svg {
+    >svg {
       width: 100%;
       height: auto;
     }
@@ -163,9 +163,10 @@ p {
   text-align: center;
   max-width: var(--max-width-mobile);
 
-  > p {
+  >p {
     margin-bottom: 6px;
   }
+
   @media (min-width: 992px) {
     max-width: var(--max-width-desktop);
   }
